@@ -1,0 +1,37 @@
+/**
+ *
+ */ 
+
+ @use '../abstracts/variables' as vars;
+ @use 'sass:map';
+
+.eventCard {
+    background-color: map.get($map: vars.$colors, $key: darkpink);
+    width: 350px;
+    height: 150px;
+    color: map.get($map: vars.$colors, $key: white);
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .eventInfo {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+
+        & .hostAvatar {
+            background-color: map.get($map: vars.$colors, $key: darkblue);
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+        }
+    }
+}

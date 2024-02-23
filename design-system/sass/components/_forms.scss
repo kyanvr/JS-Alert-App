@@ -1,0 +1,43 @@
+/**
+ * Forms
+ */
+
+form {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 30%;
+        margin: 0;
+    }
+
+    .username:before {
+        content: "";
+        position: absolute;
+        left: 15px;
+        top: 0;
+        bottom: 0;
+        width: 15px;
+        background: url("../assets/ic_perm_identity_24px.svg") center / contain no-repeat;
+    }
+
+    .email:before {
+        content: "";
+        position: absolute;
+        left: 15px;
+        top: 0;
+        bottom: 0;
+        width: 15px;
+        background: url("../assets/at-solid.svg") center / contain no-repeat;
+    }
+
+    .password:before {
+        content: "";
+        position: absolute;
+        left: 15px;
+        top: 0;
+        bottom: 0;
+        width: 15px;
+        background: url("../assets/lock-solid.svg") center / contain no-repeat;
+    }
+}

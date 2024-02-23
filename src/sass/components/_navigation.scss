@@ -1,0 +1,45 @@
+/**
+* Navigation
+*/ 
+
+@use '../abstracts/variables' as vars;
+@use 'sass:map';
+
+#navBar {
+    width: 100%;
+    min-height: 10%;
+    background-color: map.get($map: vars.$colors, $key: white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    filter: drop-shadow(0 -3px 5px map.get($map: vars.$colors, $key: light-grey));
+    z-index: 999;
+    bottom: 0;
+    position: absolute;
+
+    .navContent {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+
+        .active {
+
+            i {
+                font-size: 2.5rem;
+                opacity: 1;
+            }
+        }
+
+        button {
+
+            color: map.get($map: vars.$colors, $key: darkblue);
+            background: none;
+
+            i {
+                font-size: 1.3rem;
+                opacity: 0.6;
+            }
+        }
+    }
+}

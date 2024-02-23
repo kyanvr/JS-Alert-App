@@ -1,0 +1,24 @@
+/**
+ * Header
+ */
+
+ @use '../abstracts/variables' as vars;
+ @use 'sass:map';
+
+.headerContent {
+    display: flex;
+    flex-direction: column;
+
+    & nav {
+
+        ul {
+
+            li {
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+

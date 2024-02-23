@@ -1,0 +1,23 @@
+/**
+ * Helpers
+ */
+
+ @use '../abstracts/variables' as vars;
+ @use 'sass:map';
+
+.underline {
+    background-image: linear-gradient(#5fca66, #5fca66);
+    background-position: bottom center; /*Adjust the background-position to move the line*/
+    background-size: 80% 2px; /*Adjust the background size to control length and height*/
+    background-repeat: no-repeat;
+    padding-bottom: 4px; /* this can also control the position */
+}
+
+.borderBottom {
+    background-image: linear-gradient(map.get($map: vars.$colors, $key: grey), map.get($map: vars.$colors, $key: grey));
+    background-position: bottom center; /*Adjust the background-position to move the line*/
+    background-size: 60% 2px; /*Adjust the background size to control length and height*/
+    background-repeat: no-repeat;
+    padding-bottom: 4px; /* this can also control the position */
+    margin-top: 20px;
+}

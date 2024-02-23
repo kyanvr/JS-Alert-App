@@ -1,0 +1,62 @@
+/** 
+ * Dasboard page
+ */
+
+ @use '../abstracts/variables' as vars;
+ @use 'sass:map';
+ 
+#dashboardContainer {
+    background: white;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        width: 40%;
+        margin: 30px;
+    }
+
+    .placeholderAvatar {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        #userAvatar {
+            width: 100%;
+            border-radius: 50px;
+        }
+    }
+
+    .logout {
+        background: none;
+        color: map.get($map: vars.$colors, $key: darkblue);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+
+        i {
+            font-size: 2rem;
+        }
+    }
+
+    .createEventBtn {
+        margin-bottom: 20px;
+    }
+
+    .navDashboard {
+        display: flex;
+        justify-content: space-between;
+        // width: 100%;
+        // margin: 0 30px;
+
+        a {
+            width: fit-content;
+            text-align: center;
+            padding: 0 10px;
+        }
+    }
+}

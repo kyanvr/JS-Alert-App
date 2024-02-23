@@ -1,0 +1,15 @@
+/**
+ * App container
+ */
+
+ @use '../abstracts/extends';
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/abstract-timekeeper.svg');
+    @extend %background-properties;
+}

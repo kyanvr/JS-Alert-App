@@ -1,0 +1,15 @@
+/**
+ * Register page
+ */
+
+@use '../abstracts/variables' as vars;
+@use 'sass:map';
+
+
+#registerContainer {
+
+    .signUpWith {
+        color: map.get($map: vars.$colors, $key: grey);
+        margin: 0;
+    }
+}

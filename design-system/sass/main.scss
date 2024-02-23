@@ -1,0 +1,26 @@
+/**
+ * Main styles
+ */
+
+// 1. Vendors
+@use './vendors/normalize';
+
+// 2. Base
+@use './base/base';
+@use './base/fonts';
+@use './base/helpers';
+@use './base/typography';
+
+// 3. Layout
+@use './layout/header';
+@use './layout/grid';
+
+// 4. Components
+@use './components/buttons';
+@use './components/forms';
+@use './components/card';
+@use './components/error';
+@use './components/comment';
+
+// 5. Page-specific
+@use './pages/home';

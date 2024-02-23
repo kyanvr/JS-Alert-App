@@ -1,0 +1,32 @@
+/**
+ * Offline Page
+ */
+ 
+ @use '../abstracts/extends';
+
+.offline-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/abstract-timekeeper.svg');
+    @extend %background-properties;
+
+
+    .offline-container__content {
+        width: 50%;
+
+        .content__p {
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    
+        .content__img {
+            width: 20%;
+        }
+    }
+}

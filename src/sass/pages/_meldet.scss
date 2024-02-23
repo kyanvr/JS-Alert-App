@@ -1,0 +1,54 @@
+/**
+* Meldet.org page
+*/ 
+@use '../abstracts/variables' as vars;
+@use 'sass:map';
+
+#meldetContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .meldetHeader {
+        text-align: center;
+        margin-top: 35px;
+        color: map.get($map: vars.$colors, $key: white);
+        font-size: 1.5rem;
+    }
+
+    .meldetFormDiv {
+        height: 85%;
+        width: 100%;
+        overflow: scroll;
+        background-color: map.get($map: vars.$colors, $key: white);
+        border-radius: 50px 50px 0 0;
+        padding-top: 30px;
+        padding-bottom: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .meldetForm {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+
+            input {
+                margin: 0;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            label {
+                margin-left: 3rem;
+                margin-bottom: 5px;
+            }
+        }
+
+        
+    }
+}

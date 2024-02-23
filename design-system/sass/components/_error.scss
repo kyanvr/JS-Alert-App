@@ -1,0 +1,18 @@
+/**
+ *
+ */
+
+ @use '../abstracts/variables' as vars;
+ @use 'sass:map';
+
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    background-color: map.get($map: vars.$colors, $key: darkpink);
+    color: map.get($map: vars.$colors, $key: white);
+    border-radius: 10px;
+    margin: 0;
+}

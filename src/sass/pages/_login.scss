@@ -1,0 +1,14 @@
+/**
+* Login page
+*/
+
+@use '../abstracts/variables' as vars;
+@use 'sass:map';
+
+#loginContainer {
+
+    .signUpWith {
+        color: map.get($map: vars.$colors, $key: grey);
+        margin: 0;
+    }
+}

@@ -1,0 +1,44 @@
+/** 
+ * Button components
+ */
+
+ @use '../abstracts/variables' as vars;
+ @use 'sass:map';
+
+.buttons {
+
+    .secondary-button {
+        background-color: map.get($map: vars.$colors, $key: darkpink);
+        
+        &.panic {
+            height: 75px;
+            width: 150px;
+        }
+
+        &.reject {
+            background-color: map.get($map: vars.$colors, $key: white);
+            color: map.get($map: vars.$colors, $key: darkpink);
+            border: 2px solid map.get($map: vars.$colors, $key: darkpink);
+        }
+    }
+
+    .tertiary-button {
+        &.delete {
+            background-color: map.get($map: vars.$colors, $key: red);
+        }
+
+        &.picture {
+            background-color: map.get($map: vars.$colors, $key: purple);
+        }
+
+        &.back, &.close {
+            color: map.get($map: vars.$colors, $key: darkblue);
+            background-color: white;
+            width: 35px;
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+/**
+ * Main styles
+ */
+
+// 1. Vendors
+@use './vendors/normalize';
+
+// 2. Base
+@use './base/base';
+@use './base/fonts';
+@use './base/helpers';
+@use './base/typography';
+
+// 3. Layout
+@use './layout/header';
+
+// 4. Components
+@use './components/app';
+@use './components/buttons';
+@use './components/forms';
+@use './components/event';
+@use './components/error';
+@use './components/comment';
+@use './components/navigation';
+
+// 5. Page-specific
+@use './pages/dashboard';
+@use './pages/offline';
+@use './pages/register';
+@use './pages/login';
+@use './pages/ai';
+@use './pages/privacy';
+@use './pages/createEvent';
+@use './pages/settings';
+@use './pages/meldet';

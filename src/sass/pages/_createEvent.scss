@@ -1,0 +1,65 @@
+/**
+* Create event page
+*/ 
+
+@use '../abstracts/variables' as vars;
+@use 'sass:map';
+
+#createContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    .createEvent {
+        color: map.get($map: vars.$colors, $key: white);
+        font-size: 1.5rem;
+    }
+
+    .eventFormDiv {
+        background-color: map.get($map: vars.$colors, $key: white);
+        width: 100%;
+        height: 85%;
+        overflow: scroll;
+        // position: absolute;
+        // bottom: 0;
+        border-radius: 50px 50px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .eventForm {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            padding-top: 250px;
+
+            input {
+                margin: 0;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            label {
+                margin-left: 3rem;
+                margin-bottom: 5px;
+            }
+
+            textarea {
+                max-width: 75%;
+                margin-bottom: 30px;
+            }
+
+            
+        }
+
+        .createBtn {
+            width: 30%;
+            margin-bottom: 30px;
+        }
+    }
+}

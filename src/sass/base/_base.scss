@@ -1,0 +1,85 @@
+/** 
+ * Base 
+ */
+
+ @use '../abstracts/variables' as vars;
+ @use 'sass:map';
+ @use '../abstracts/extends';
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+img {
+    width: 10%;
+}
+
+header {
+    width: 100%;
+    margin: 30px 0 100px;
+}
+
+nav {
+    width: 100%;
+    margin-top: 20px;
+}
+
+a {
+    color: map.get($map: vars.$colors, $key: darkblue);
+    text-decoration: none;
+    opacity: 0.6;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+ul {
+    display: flex;
+    width: 50%;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+p {
+    color: map.get($map: vars.$colors, $key: black);
+}
+
+button {
+    background-color: map.get($map: vars.$colors, $key: darkblue);
+    color: map.get($map: vars.$colors, $key: white);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: default;
+    }
+}
+
+input {
+    border: 1px solid map.get($map: vars.$colors, $key: grey);
+    border-radius: 10px;
+    height: 45px;
+    max-width: 250px;
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+
+    &:focus {
+        outline: 2px solid map.get($map: vars.$colors, $key: darkblue);
+        border: none;
+    }
+}

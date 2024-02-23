@@ -1,0 +1,39 @@
+/**
+* Privacy page
+*/
+
+#privacyContainer {
+
+    .logo {
+        width: 75%;
+    }
+
+    .privacyParagraph {
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+        overflow: scroll;
+    }
+
+    .checkboxDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        .checkbox {
+            outline: none;
+            border: none;
+            width: 20px;
+            height: 20px;
+            margin-top: 0;
+        }
+
+        .readPrivacy {
+            width: 75%;
+            margin: 0 0 0 20px;
+            opacity: 0.8;
+            font-size: 0.8rem;
+        }
+    }
+}
